@@ -677,35 +677,35 @@
         <div class="row g-0 clients-wrap">
 
           <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/kengen.jpg" class="img-fluid" alt="">
+            <img src="assets/img/clients/kclient-2.jpg" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
           <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/kenya power.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/kclient-3.jpg" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/kclient-4.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/kclient-5.jpg" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/kclient-6.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/kclient-7.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/kclient-8.png" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
           <div class="col-xl-3 col-md-4 client-logo">
             <img src="assets/img/clients/isk.jpg" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
         </div>
@@ -843,11 +843,12 @@
         <div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Our Newsletter</h4>
           <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form  name="submit-to-google-sheet" >
+          <form action="https://api.web3forms.com/submit" method="post" class="php-email-form" name="submit-to-google-sheet">
+            <input type="hidden" name="access_key" value="430cab00-2681-41d7-8027-6cd50c61645d">
             <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <!-- <div class="loading">Loading</div> -->
+            <div class="loading">Loading</div>
             <div class="error-message"></div>
-            <div id="msg" class="sent-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
           </form>
         </div>
 
@@ -855,12 +856,9 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Astute Survey Solutions Ltd</strong> <span>All Rights Reserved</span></p>
+      <p>©  <strong class="px-1 sitename">Astute Survey Solutions Ltd</strong> | 2025</p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        
         Designed by <a href="#">Rebecca Njoki</a>
       </div>
     </div>
@@ -881,11 +879,7 @@
   
     form.addEventListener('submit', e => {
       e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-          msg.innerHTML = "Thank you for subscribing!"
-        })
-        
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})   
     })
   </script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
